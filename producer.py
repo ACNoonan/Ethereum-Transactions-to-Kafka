@@ -33,7 +33,7 @@ def generate_msg(tx_len = 64, act_len = 42):
     fm = '0x' + ''.join(random.choices(string.ascii_lowercase+string.digits+string.ascii_uppercase,k=act_len)) # 0x prefix + Random 42 digit alphanumeric
     to = '0x' + ''.join(random.choices(string.ascii_lowercase+string.digits+string.ascii_uppercase,k=act_len)) # 0x prefix + Random 42 digit alphanumeric
     value = randint(1000000000000000000,99999999999999999999)                                                 # 20 digit random number (*)
-    gas = randint(11111,99999999)                                                                              # 5 - 8 digit random number
+    gas = randint(10000,99999999)                                                                              # 5 - 8 digit random number
     gp = randint(1000000000000,99999999999)                                                                                           # 12 digit random number (*)
     ie = randint(0,1)                                                                                          # binary/boolean
     txstatus = randint(0,1)                                                                                    # binary/boolean
