@@ -1,3 +1,5 @@
-_pycache_\
+.pem
 
-kafkaKeys\
+.cert
+
+.key
